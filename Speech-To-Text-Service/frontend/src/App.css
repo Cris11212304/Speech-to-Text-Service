@@ -1,0 +1,285 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #61dafb;
+  font-weight: 700;
+}
+
+.nav-buttons a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+  color: #61dafb;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.content {
+  flex: 1;
+  padding-right: 40px;
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.content p {
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #4b5563;
+}
+
+.content p strong {
+  color: #111827;
+}
+
+.service-title,
+.analysis-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.service-options {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #d1d5db;
+}
+
+.option.selected {
+  background-color: #d1fae5;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+.check-icon {
+  color: #10b981;
+  margin-right: 10px;
+}
+
+.custom-select {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.custom-select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.custom-categories {
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.custom-categories label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #1f2937;
+}
+
+.custom-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.file-upload {
+  margin-bottom: 30px;
+}
+
+.file-upload label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #1f2937;
+}
+
+.file-input {
+  padding: 10px;
+}
+
+.generate-button {
+  padding: 15px 30px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+  background-color: #2563eb;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.images img {
+  width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos específicos para la página de Cuotas */
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  max-width: 400px;  /* Limita la anchura máxima de los recuadros */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.reportes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.reportes-table th,
+.reportes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.reportes-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.text-field-name {
+  margin-bottom: 20px;
+}
+
+.text-field-name label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #1f2937;
+}
